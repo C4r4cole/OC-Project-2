@@ -1,0 +1,7 @@
+body{
+    background-color: red;
+    min-height: 100vh;
+    &:hover{
+        background-color: blue;
+    }
+}
