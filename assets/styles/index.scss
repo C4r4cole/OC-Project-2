@@ -1,11 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Shrikhand', cursive;
 
 $bg-color_1: #eaeaea;
 $bg-color_2: #f6f6f6;
+$color-detail_1: #9356dc;
 $text-color_1: #353535;
+$text-color_2: #7e7e7e;
+
+@mixin shadow-btn {
+  box-shadow: 3px 3px 10px 2px #cecece;
+}
+
+@mixin linear-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+  );
+}
 
 body {
   display: flex;
@@ -13,16 +27,20 @@ body {
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-container {
   width: 100%;
   max-width: 375px;
   min-width: 320px;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
   height: 113px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   &__image {
     height: 56.5px;
     display: flex;
@@ -40,6 +58,7 @@ body {
   justify-content: center;
   align-items: center;
   background: $bg-color_1;
+  box-shadow: inset 0px 3px 3px 0px #cecece;
   i {
     color: $text-color_1;
   }
@@ -65,14 +84,12 @@ body {
   }
   &__inline {
     font-size: 1rem;
+    color: $text-color_2;
   }
   &__btn {
     color: white;
-    background: linear-gradient(
-      0deg,
-      rgba(147, 86, 220, 1) 0%,
-      rgba(255, 121, 218, 1) 100%
-    );
+    @include linear-gradient();
+    @include shadow-btn();
     border: none;
     padding: 15px;
     border-radius: 30px;
@@ -81,24 +98,48 @@ body {
 }
 
 .functioning {
-  //   width: 100%;
-  &__heading {
-    font-family: "Roboto", sans-serif;
-  }
+  height: 440px;
   &__block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 300px;
   }
 }
 
 .btn {
   background: $bg-color_2;
   width: 90%;
+  @include shadow-btn();
   border-radius: 15px;
+  i {
+    color: $text-color_2;
+    transform: translateX(-34px);
+  }
   &__link {
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
+    &:active {
+      color: $color-detail_1;
+    }
+  }
+  &__number {
+    background: $color-detail_1;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    transform: translateX(-70px);
+  }
+  &__byline {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
   }
 }
