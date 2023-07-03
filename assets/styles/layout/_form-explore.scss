@@ -1,0 +1,24 @@
+.form-explore {
+  background: $bg-color_2;
+  border: $bg-color_2 solid 1px;
+  font-family: "Roboto", sans-serif;
+  padding: 50px 30px;
+  text-align: center;
+  &__heading {
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+  &__inline {
+    font-size: 1rem;
+    color: $text-color_2;
+  }
+  &__btn {
+    color: white;
+    @include linear-gradient();
+    @include shadow-btn();
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+}

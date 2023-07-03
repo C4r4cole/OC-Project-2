@@ -1,0 +1,19 @@
+.form-location {
+  height: 56.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-color_1;
+  box-shadow: inset 0px 3px 3px 0px #cecece;
+  i {
+    color: $text-color_1;
+  }
+  &__input {
+    border: none;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: $text-color_1;
+  }
+}

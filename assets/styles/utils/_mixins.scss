@@ -1,0 +1,11 @@
+@mixin shadow-btn {
+  box-shadow: 3px 3px 10px 2px #cecece;
+}
+
+@mixin linear-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+  );
+}
