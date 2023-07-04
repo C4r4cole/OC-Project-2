@@ -1,0 +1,15 @@
+.card {
+  &__link {
+    height: 251px;
+  }
+  &__image {
+    height: 80%;
+  }
+  &__text {
+    height: 20%;
+  }
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

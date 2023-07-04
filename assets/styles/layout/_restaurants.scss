@@ -1,0 +1,9 @@
+.restaurants {
+  width: 100%;
+  height: 1800px;
+  background: $bg-color_2;
+  @include flexy;
+  &__heading {
+    width: 340px;
+  }
+}

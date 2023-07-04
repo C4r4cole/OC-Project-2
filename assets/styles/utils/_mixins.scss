@@ -9,3 +9,9 @@
     rgba(255, 121, 218, 1) 100%
   );
 }
+
+@mixin flexy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
