@@ -1,0 +1,11 @@
+.footer {
+  height: 200px;
+  padding: 15px;
+  background: $text-color_1;
+  color: white;
+  &__text {
+    &--white {
+      color: white;
+    }
+  }
+}
