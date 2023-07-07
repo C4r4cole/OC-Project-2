@@ -1,0 +1,12 @@
+.menu {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  &__heading {
+    font-size: 1.5rem;
+    margin-right: 50px;
+  }
+  & i {
+    transform: scale(1.5);
+  }
+}
