@@ -1,0 +1,10 @@
+.courses {
+  &__header {
+    font-weight: lighter;
+  }
+  &__header--mint {
+    width: 50px;
+    border-bottom: $color-detail_2 solid 3px;
+    transform: translateY(-18px);
+  }
+}

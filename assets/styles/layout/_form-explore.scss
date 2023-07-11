@@ -20,5 +20,12 @@
     padding: 15px;
     border-radius: 30px;
     font-size: 1rem;
+    cursor: pointer;
+    opacity: 100%;
+    transition: all 400ms;
+    &:hover {
+      opacity: 90%;
+      transform: translateY(2px);
+    }
   }
 }

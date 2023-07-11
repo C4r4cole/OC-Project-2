@@ -12,6 +12,14 @@ body {
           align-items: center;
 }
 
+h3 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -31,7 +39,6 @@ a:visited {
 }
 
 .header {
-  width: 100%;
   height: 113px;
 }
 .header__image {
@@ -45,6 +52,11 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.header__image i {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+  font-size: 1.5rem;
 }
 .header__image img {
   width: 50%;
@@ -102,6 +114,15 @@ a:visited {
   padding: 15px;
   border-radius: 30px;
   font-size: 1rem;
+  cursor: pointer;
+  opacity: 100%;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+.form-explore__btn:hover {
+  opacity: 90%;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .functioning {
@@ -200,8 +221,8 @@ a:visited {
   color: white;
 }
 .footer__image {
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 .footer__text {
   height: 120px;
@@ -235,10 +256,15 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 1700px;
+  height: 1420px;
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
   background: #f6f6f6;
+  margin-bottom: -60px;
+}
+
+#note-enchantee {
+  height: 1550px;
 }
 
 .courses {
@@ -279,6 +305,9 @@ a:visited {
   border-radius: 30px;
   -webkit-box-shadow: 3px 3px 10px 2px #cecece;
           box-shadow: 3px 3px 10px 2px #cecece;
+}
+.choices .dish {
+  margin-bottom: 0;
 }
 .choices__price {
   margin-right: 15px;
@@ -336,6 +365,11 @@ a:visited {
   font-weight: 700;
 }
 
+.btn-courses {
+  margin: 20px 0;
+  padding: 15px 60px;
+}
+
 .card {
   background: white;
   border-radius: 15px;
@@ -366,4 +400,18 @@ a:visited {
 
 .menu__heading {
   font-family: "Shrikhand", cursive;
+}
+
+.courses__header {
+  font-weight: lighter;
+}
+.courses__header--mint {
+  width: 50px;
+  border-bottom: #99e2d0 solid 3px;
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+}
+
+.heart-icon .fa-solid {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

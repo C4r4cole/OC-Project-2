@@ -8,8 +8,7 @@
   background: $text-color_1;
   color: white;
   &__image {
-    // border: red solid 1px;
-    transform: scale(0.6);
+    filter: invert(100%);
   }
   &__text {
     height: 120px;

@@ -7,6 +7,9 @@
   justify-content: space-between;
   border-radius: 30px;
   @include shadow-btn;
+  .dish {
+    margin-bottom: 0;
+  }
   &__price {
     margin-right: 15px;
   }
