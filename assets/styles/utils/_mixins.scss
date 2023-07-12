@@ -1,5 +1,5 @@
-@mixin shadow-btn {
-  box-shadow: 3px 3px 10px 2px #cecece;
+@mixin shadow-btn($color) {
+  box-shadow: 3px 3px 10px 2px $color;
 }
 
 @mixin linear-gradient {

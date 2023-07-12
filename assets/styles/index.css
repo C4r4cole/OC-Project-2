@@ -126,9 +126,9 @@ a:visited {
   transition: all 400ms;
 }
 .form-explore__btn:hover {
-  opacity: 90%;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  opacity: 80%;
+  -webkit-box-shadow: 3px 3px 10px 2px #9e9e9e;
+          box-shadow: 3px 3px 10px 2px #9e9e9e;
 }
 
 .functioning {
@@ -322,6 +322,10 @@ a:visited {
   color: #353535;
 }
 
+.super-card {
+  position: relative;
+}
+
 .btn {
   background: #f6f6f6;
   width: 90%;
@@ -418,6 +422,17 @@ a:visited {
           transform: translateY(-18px);
 }
 
-.heart-icon .fa-solid {
-  display: none;
+.heart-icon {
+  position: absolute;
+  z-index: 100;
+  -webkit-transform: translate(300px, -50px);
+          transform: translate(300px, -50px);
+}
+.heart-icon .fa-regular:active {
+  font-weight: 900;
+}
+.heart-icon i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

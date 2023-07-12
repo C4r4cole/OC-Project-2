@@ -1,7 +1,7 @@
 .btn {
   background: $bg-color_2;
   width: 90%;
-  @include shadow-btn();
+  @include shadow-btn($color-shadow);
   border-radius: 15px;
   i {
     color: $text-color_2;

@@ -1,5 +1,12 @@
 .heart-icon {
-  .fa-solid {
-    display: none;
+  position: absolute;
+  z-index: 100;
+  transform: translate(300px, -50px);
+  .fa-regular:active {
+    font-weight: 900;
+  }
+  & i {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 }

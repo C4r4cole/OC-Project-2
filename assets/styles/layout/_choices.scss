@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 30px;
-  @include shadow-btn;
+  @include shadow-btn($color-shadow);
   .dish {
     margin-bottom: 0;
   }

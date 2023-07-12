@@ -15,7 +15,7 @@
   &__btn {
     color: white;
     @include linear-gradient();
-    @include shadow-btn();
+    @include shadow-btn($color-shadow);
     border: none;
     padding: 15px;
     border-radius: 30px;
@@ -24,8 +24,8 @@
     opacity: 100%;
     transition: all 400ms;
     &:hover {
-      opacity: 90%;
-      transform: translateY(2px);
+      opacity: 80%;
+      @include shadow-btn(#9e9e9e);
     }
   }
 }
