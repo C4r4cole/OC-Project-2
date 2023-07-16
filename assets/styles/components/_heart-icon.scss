@@ -16,3 +16,19 @@
     }
   }
 }
+
+.menu {
+  & i {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+  & input[type="checkbox"] {
+    display: none; /* Cache la case à cocher */
+    &:checked + label .fa-heart {
+      font-weight: 900; /* Modifie la couleur de l'icône lorsque la case est cochée */
+      @include linear-gradient;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

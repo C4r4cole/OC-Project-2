@@ -1,6 +1,7 @@
 .card {
   background: white;
   border-radius: 15px;
+  position: relative;
   &__text {
     padding: 0 15px;
     display: flex;
@@ -12,8 +13,5 @@
     height: 231px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-  }
-  & i {
-    transform: scale(1.5);
   }
 }

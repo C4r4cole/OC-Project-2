@@ -1,7 +1,16 @@
 .main-container {
-  width: 100%;
-  max-width: 375px;
-  min-width: 320px;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  position: absolute;
+  overflow: hidden;
+  animation: content 0ms 2000ms both;
+  z-index: 1;
+}
+
+@keyframes content {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
