@@ -339,6 +339,74 @@ a:visited {
   color: #353535;
 }
 
+.first {
+  -webkit-animation: choices-slide 1000ms 2000ms;
+          animation: choices-slide 1000ms 2000ms;
+}
+
+.second {
+  -webkit-animation: choices-slide 1000ms 2200ms;
+          animation: choices-slide 1000ms 2200ms;
+}
+
+.third {
+  -webkit-animation: choices-slide 1000ms 2400ms;
+          animation: choices-slide 1000ms 2400ms;
+}
+
+.fourth {
+  -webkit-animation: choices-slide 1000ms 2600ms;
+          animation: choices-slide 1000ms 2600ms;
+}
+
+.fifth {
+  -webkit-animation: choices-slide 1000ms 2800ms;
+          animation: choices-slide 1000ms 2800ms;
+}
+
+.sixth {
+  -webkit-animation: choices-slide 1000ms 3000ms;
+          animation: choices-slide 1000ms 3000ms;
+}
+
+.seventh {
+  -webkit-animation: choices-slide 1000ms 3200ms;
+          animation: choices-slide 1000ms 3200ms;
+}
+
+.eighth {
+  -webkit-animation: choices-slide 1000ms 3400ms;
+          animation: choices-slide 1000ms 3400ms;
+}
+
+.ninth {
+  -webkit-animation: choices-slide 1000ms 3600ms;
+          animation: choices-slide 1000ms 3600ms;
+}
+
+@-webkit-keyframes choices-slide {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes choices-slide {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
 .super-card {
   position: relative;
 }

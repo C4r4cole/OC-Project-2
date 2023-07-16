@@ -17,3 +17,41 @@
     color: $text-color_1;
   }
 }
+
+.first {
+  animation: choices-slide 1000ms 2000ms;
+}
+.second {
+  animation: choices-slide 1000ms 2200ms;
+}
+.third {
+  animation: choices-slide 1000ms 2400ms;
+}
+.fourth {
+  animation: choices-slide 1000ms 2600ms;
+}
+.fifth {
+  animation: choices-slide 1000ms 2800ms;
+}
+.sixth {
+  animation: choices-slide 1000ms 3000ms;
+}
+.seventh {
+  animation: choices-slide 1000ms 3200ms;
+}
+.eighth {
+  animation: choices-slide 1000ms 3400ms;
+}
+.ninth {
+  animation: choices-slide 1000ms 3600ms;
+}
+
+@keyframes choices-slide {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
