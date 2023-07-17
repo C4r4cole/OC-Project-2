@@ -1,4 +1,6 @@
 .choices {
+  height: 70px;
+  opacity: 0;
   background: white;
   margin-bottom: 10px;
   padding: 10px;
@@ -7,6 +9,19 @@
   justify-content: space-between;
   border-radius: 30px;
   @include shadow-btn($color-shadow);
+  &__choosen{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-detail_2;
+    & i {
+      color: white;
+    }
+  }
+  &:active{
+  }
   .dish {
     margin-bottom: 0;
   }
@@ -19,36 +34,40 @@
 }
 
 .first {
-  animation: choices-slide 1000ms 2000ms;
+  animation: choices-slide 1000ms 2000ms forwards;
 }
 .second {
-  animation: choices-slide 1000ms 2200ms;
+  animation: choices-slide 1000ms 2200ms forwards;
 }
 .third {
-  animation: choices-slide 1000ms 2400ms;
+  animation: choices-slide 1000ms 2400ms forwards;
 }
 .fourth {
-  animation: choices-slide 1000ms 2600ms;
+  animation: choices-slide 1000ms 2600ms forwards;
 }
 .fifth {
-  animation: choices-slide 1000ms 2800ms;
+  animation: choices-slide 1000ms 2800ms forwards;
 }
 .sixth {
-  animation: choices-slide 1000ms 3000ms;
+  animation: choices-slide 1000ms 3000ms forwards;
 }
 .seventh {
-  animation: choices-slide 1000ms 3200ms;
+  animation: choices-slide 1000ms 3200ms forwards;
 }
 .eighth {
-  animation: choices-slide 1000ms 3400ms;
+  animation: choices-slide 1000ms 3400ms forwards;
 }
 .ninth {
-  animation: choices-slide 1000ms 3600ms;
+  animation: choices-slide 1000ms 3600ms forwards;
+}
+.tenth{
+  animation: choices-slide 1000ms 3800ms forwards;
 }
 
 @keyframes choices-slide {
   0% {
     transform: translateX(-500px);
+    opacity: 0;
   }
   100% {
     transform: translateX(0px);

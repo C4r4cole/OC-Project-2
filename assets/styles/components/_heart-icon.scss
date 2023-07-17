@@ -9,15 +9,16 @@
   & input[type="checkbox"] {
     display: none; /* Cache la case à cocher */
     &:checked + label .fa-heart {
-      font-weight: 900; /* Modifie la couleur de l'icône lorsque la case est cochée */
+      font-weight: 900; /* Modifie le remplissage de l'icône lorsque la case est cochée */
       @include linear-gradient;
-      background-clip: text;
+      background-clip: text; /*Permet de découper selon la forme de l'icone*/
       color: transparent;
+      animation: heart 400ms;
     }
   }
 }
 
-.menu {
+.menu{
   & i {
     transform: scale(1.5);
     cursor: pointer;
@@ -25,10 +26,20 @@
   & input[type="checkbox"] {
     display: none; /* Cache la case à cocher */
     &:checked + label .fa-heart {
-      font-weight: 900; /* Modifie la couleur de l'icône lorsque la case est cochée */
+      font-weight: 900; /* Modifie le remplissage de l'icône lorsque la case est cochée */
       @include linear-gradient;
-      background-clip: text;
+      background-clip: text; /*Permet de découper selon la forme de l'icone*/
       color: transparent;
+      animation: heart 400ms;
     }
+}
+}
+
+@keyframes heart {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
