@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap");
 body {
   display: flex;
   flex-direction: column;
@@ -175,6 +175,9 @@ a:visited {
 .footer__text--white {
   color: white;
 }
+.footer__text i {
+  margin-right: 8px;
+}
 
 .header__food-picture img {
   width: 100%;
@@ -191,24 +194,35 @@ a:visited {
 }
 
 .courses {
-  width: 340px;
+  width: 349px;
+}
+.courses__header {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.22rem;
+}
+.courses__header--mint {
+  width: 50px;
+  border-bottom: #99e2d0 solid 3px;
+  transform: translateY(-12px);
 }
 
 .menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 340px;
 }
 .menu__heading {
   font-size: 1.5rem;
-  margin-right: 50px;
 }
 .menu i {
   transform: scale(1.5);
+  margin-right: 20px;
 }
 
 .choices {
-  height: 70px;
+  height: 69px;
   opacity: 0;
   background: white;
   margin-bottom: 10px;
@@ -216,28 +230,45 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: 3px 3px 10px 2px #cecece;
+  cursor: pointer;
+}
+.choices:active .choices__choosen {
+  width: 69px;
+}
+.choices:active .choices__choosen i {
+  opacity: 1;
 }
 .choices__choosen {
-  width: 50px;
+  width: 0px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #99e2d0;
+  margin-right: -10px;
+  border-top: #99e2d0 solid 10px;
+  border-bottom: #99e2d0 solid 10px;
+  border-radius: 0 15px 15px 0;
 }
 .choices__choosen i {
+  opacity: 0;
   color: white;
+  transform: scale(1.5);
 }
 .choices .dish {
   margin-bottom: 0;
 }
+.choices__dish {
+  padding-left: 8px;
+}
 .choices__price {
-  margin-right: 15px;
+  font-weight: 900;
+  transform: translateX(14px);
 }
 .choices p {
-  color: #353535;
+  margin-top: 5px;
 }
 
 .first {
@@ -466,15 +497,6 @@ a:visited {
 
 .menu__heading {
   font-family: "Shrikhand", cursive;
-}
-
-.courses__header {
-  font-weight: lighter;
-}
-.courses__header--mint {
-  width: 50px;
-  border-bottom: #99e2d0 solid 3px;
-  transform: translateY(-18px);
 }
 
 .heart-icon {

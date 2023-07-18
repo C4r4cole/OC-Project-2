@@ -1,5 +1,5 @@
 .choices {
-  height: 70px;
+  height: 69px;
   opacity: 0;
   background: white;
   margin-bottom: 10px;
@@ -7,29 +7,48 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 30px;
+  border-radius: 15px;
   @include shadow-btn($color-shadow);
+  cursor: pointer;
+  &:active{
+    .choices{
+      &__choosen{
+      width: 69px;
+      i {
+        opacity: 1;
+      }
+    }
+  }
+}
   &__choosen{
-    width: 50px;
+    width: 0px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: $color-detail_2;
+    margin-right: -10px;
+    border-top: $color-detail_2 solid 10px;
+    border-bottom: $color-detail_2 solid 10px;
+    border-radius: 0 15px 15px 0;
     & i {
+      opacity: 0;
       color: white;
+      transform: scale(1.5);
     }
-  }
-  &:active{
   }
   .dish {
     margin-bottom: 0;
   }
+  &__dish{
+    padding-left: 8px;
+  }
   &__price {
-    margin-right: 15px;
+    font-weight: 900;
+    transform: translateX(14px);
   }
   & p {
-    color: $text-color_1;
+    margin-top: 5px;
   }
 }
 
