@@ -1,179 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <script src="https://kit.fontawesome.com/3564727c25.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3564727c25.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../assets/styles/index.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="main-container">
-            <header class="header-courses">
-                <div class="header__image">
-                    <a href="../index.html">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </a>
-                    <img src="../assets/images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+      <div class="main-container">
+        <header class="header-courses">
+          <div class="header__image">
+            <a href="../index.html">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <img src="../assets/images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+          </div>
+          <div class="header__food-picture">
+            <img
+              src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="photo d'un plat"
+            />
+          </div>
+        </header>
+        <main class="main-border-radius">
+          <div class="menu">
+            <h1 class="menu__heading">À la française</h1>
+            <input type="checkbox" id="heart-checkbox5" />
+            <label for="heart-checkbox5">
+              <i class="fa-regular fa-heart"></i>
+            </label>
+          </div>
+          <div class="courses">
+            <h2 class="courses__header">Entrées</h2>
+            <div class="courses__header--mint"></div>
+            <div class="choices first">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Tartare de poulpe acidulé</h3>
+                  <p>Aux zestes d'orange</p>
                 </div>
-                <div class="header__food-picture">
-                    <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="photo d'un plat">
+                <div class="choices__price">
+                  <span class="price">25€</span>
                 </div>
-            </header>
-            <main class="main-border-radius">
-                <div class="menu">
-                    <h1 class="menu__heading">À la française</h1>
-                    <input type="checkbox" id="heart-checkbox5">
-                    <label for="heart-checkbox5">
-                        <i class="fa-regular fa-heart"></i>
-                    </label>
-                </div>
-                <div class="courses">
-                    <h2 class="courses__header">Entrées</h2>
-                    <div class="courses__header--mint"></div>
-                    <div class="choices first">
-                        <div class="choices__dish">
-                            <h3 class="dish">Tartare de poulpe acidulé</h3>
-                            <p>Aux zestes d'orange</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">25€</span>
-                        </div>
-                        <div class="choices__choosen">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                    <div class="choices second">
-                        <div class="choices__dish">
-                            <h3 class="dish">Velouté de légumes d'antan</h3>
-                            <p>Carotte, panais, topinambour</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">35€</span>
-                        </div>
-                    </div>
-                    <div class="choices third">
-                        <div class="choices__dish">
-                            <h3 class="dish">Soupe à l'oignon</h3>
-                            <p>Revisitée</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">20€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="courses">
-                    <h2 class="courses__header">Plats</h2>
-                    <div class="courses__header--mint"></div>
-                    <div class="choices fourth">
-                        <div class="choices__dish">
-                            <h3 class="dish">Coquilles Saint-Jacques</h3>
-                            <p>Accompagnées d'une purée de panais</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">40€</span>
-                        </div>
-                    </div>
-                    <div class="choices fifth">
-                        <div class="choices__dish">
-                            <h3 class="dish">Magret de canard</h3>
-                            <p>Et parmentier de pommes de terre</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">35€</span>
-                        </div>
-                    </div>
-                    <div class="choices sixth">
-                        <div class="choices__dish">
-                            <h3 class="dish">Pigeonneau d’Ille-et-Vilaine</h3>
-                            <p>Sur son lit de gnocchis aux légumes</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">44€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="courses">
-                    <h2 class="courses__header">Desserts</h2>
-                    <div class="courses__header--mint"></div>
-                    <div class="choices seventh">
-                        <div class="choices__dish">
-                            <h3 class="dish">Pétales de violettes glacés</h3>
-                            <p>Et purée de noisettes</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">18€</span>
-                        </div>
-                    </div>
-                    <div class="choices eighth">
-                        <div class="choices__dish">
-                            <h3 class="dish">Fondant au chocolat</h3>
-                            <p>Revisité</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">22€</span>
-                        </div>
-                    </div>
-                    <div class="choices ninth">
-                        <div class="choices__dish">
-                            <h3 class="dish">Millefeuille croustillant</h3>
-                            <p>Myrtilles et pâte d’amande</p>
-                        </div>
-                        <div class="choices__price">
-                            <span class="price">23€</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="form-explore__btn btn-courses" type="submit">
-                    Commander
-                </button>
-            </main>
-            <footer class="footer">
-                <div class="footer__image">
-                    <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" height="20px" />
-                </div>
-                <div class="footer__text">
-                    <div class="suggest">
-                        <i class="fa-solid fa-utensils"></i>
-                        <a href="#"><span class="footer__text--white">Proposer un restaurant</span></a>
-                    </div>
-                    <div class="become">
-                        <i class="fa-solid fa-handshake-angle"></i>
-                        <a href="#"><span class="footer__text--white">Devenir partenaire</span></a>
-                    </div>
-                    <div class="legal">
-                        <a href="#"><span class="footer__text--white">Mentions légales</span></a>
-                    </div>
-                    <div class="contact">
-                        <a href="mailto:c4r4cole.chevalerie@gmail.com"><span
-                                class="footer__text--white">Contact</span></a>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <div class="loader">
-            <div class="lds-spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
             </div>
+            <div class="choices second">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Velouté de légumes d'antan</h3>
+                  <p>Carotte, panais, topinambour</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">35€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="choices third">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Soupe à l'oignon</h3>
+                  <p>Revisitée</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">20€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="courses">
+            <h2 class="courses__header">Plats</h2>
+            <div class="courses__header--mint"></div>
+            <div class="choices fourth">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Coquilles Saint-Jacques</h3>
+                  <p>Accompagnées d'une purée de panais</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">40€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="choices fifth">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Magret de canard</h3>
+                  <p>Et parmentier de pommes de terre</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">35€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="choices sixth">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Pigeonneau d’Ille-et-Vilaine</h3>
+                  <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">44€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="courses">
+            <h2 class="courses__header">Desserts</h2>
+            <div class="courses__header--mint"></div>
+            <div class="choices seventh">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Pétales de violettes glacés</h3>
+                  <p>Et purée de noisettes</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">18€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="choices eighth">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Fondant au chocolat</h3>
+                  <p>Revisité</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">22€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="choices ninth">
+              <div class="choices-whole">
+                <div class="choices__dish">
+                  <h3 class="dish">Millefeuille croustillant</h3>
+                  <p>Myrtilles et pâte d’amande</p>
+                </div>
+                <div class="choices__price">
+                  <span class="price">23€</span>
+                </div>
+              </div>
+              <div class="choices__choosen">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <button class="form-explore__btn btn-courses" type="submit">
+            Commander
+          </button>
+        </main>
+        <footer class="footer">
+          <div class="footer__image">
+            <img
+              src="../assets/images/logo/ohmyfood@2x.svg"
+              alt="logo Ohmyfood"
+              height="20px"
+            />
+          </div>
+          <div class="footer__text">
+            <div class="suggest">
+              <i class="fa-solid fa-utensils"></i>
+              <a href="#"
+                ><span class="footer__text--white"
+                  >Proposer un restaurant</span
+                ></a
+              >
+            </div>
+            <div class="become">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <a href="#"
+                ><span class="footer__text--white">Devenir partenaire</span></a
+              >
+            </div>
+            <div class="legal">
+              <a href="#"
+                ><span class="footer__text--white">Mentions légales</span></a
+              >
+            </div>
+            <div class="contact">
+              <a href="mailto:c4r4cole.chevalerie@gmail.com"
+                ><span class="footer__text--white">Contact</span></a
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="loader">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
