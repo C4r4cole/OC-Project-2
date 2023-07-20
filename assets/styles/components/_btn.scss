@@ -1,8 +1,11 @@
 .btn {
   background: $bg-color_2;
-  width: 90%;
+  width: 85%;
   @include shadow-btn($color-shadow);
   border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
   &:hover{
     i{
       color: $color-detail_1;
@@ -10,7 +13,8 @@
   }
   i {
     color: $text-color_2;
-    transform: translateX(-34px);
+    position: absolute;
+    left: 35px;
   }
   &__link {
     height: 72px;
@@ -29,11 +33,14 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    transform: translateX(-65px);
+    position: absolute;
+    left: -8px;
+    // transform: translateX(-65px);
   }
   &__byline {
     width: 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 700;
   }
@@ -42,4 +49,10 @@
 .btn-courses {
   margin: 20px 0;
   padding: 15px 60px;
+}
+
+@media screen and (min-width: 1440px){
+  .btn{
+    width: 25%;
+  }
 }

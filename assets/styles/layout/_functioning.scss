@@ -1,6 +1,6 @@
 .functioning {
   background: white;
-  height: 440px;
+  margin: 30px 0;
   width: 100%;
   @include flexy;
   &__block {
@@ -12,6 +12,17 @@
     height: 300px;
   }
   &__heading {
-    width: 340px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .functioning{
+    width: 80%;
+    &__block{
+      flex-direction: row;
+      justify-content: space-around;
+      height: 150px;
+    }
   }
 }

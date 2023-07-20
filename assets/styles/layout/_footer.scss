@@ -1,5 +1,4 @@
 .footer {
-  // border: blue solid 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,6 +19,22 @@
     }
     & i {
       margin-right: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .footer{
+    height: 100px;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+    &__text{
+      padding: 5px 0;
+      margin-right: 20px;
+      flex-direction: row;
+      width: 600px;
+      align-items: end;
     }
   }
 }

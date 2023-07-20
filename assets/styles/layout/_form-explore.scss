@@ -1,16 +1,22 @@
 .form-explore {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: $bg-color_2;
   border: $bg-color_2 solid 1px;
   font-family: "Roboto", sans-serif;
-  padding: 50px 30px;
+  padding: 50px 50px;
   text-align: center;
   &__heading {
     font-size: 1.7rem;
     margin-top: 0;
+    width: 85%;
   }
   &__inline {
     font-size: 1rem;
     color: $text-color_2;
+    width: 90%;
   }
   &__btn {
     color: white;

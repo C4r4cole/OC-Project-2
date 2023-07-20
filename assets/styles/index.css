@@ -4,6 +4,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h3 {
@@ -29,6 +32,7 @@ a:visited {
   overflow: hidden;
   animation: content 0ms 2000ms both;
   z-index: 1;
+  width: 100%;
 }
 
 @keyframes content {
@@ -40,6 +44,7 @@ a:visited {
   }
 }
 .header {
+  width: 100%;
   height: 113px;
 }
 .header__image {
@@ -53,7 +58,7 @@ a:visited {
   font-size: 1.5rem;
 }
 .header__image img {
-  width: 50%;
+  height: 50%;
 }
 
 .form-location {
@@ -77,19 +82,25 @@ a:visited {
 }
 
 .form-explore {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #f6f6f6;
   border: #f6f6f6 solid 1px;
   font-family: "Roboto", sans-serif;
-  padding: 50px 30px;
+  padding: 50px 50px;
   text-align: center;
 }
 .form-explore__heading {
   font-size: 1.7rem;
   margin-top: 0;
+  width: 85%;
 }
 .form-explore__inline {
   font-size: 1rem;
   color: #7e7e7e;
+  width: 90%;
 }
 .form-explore__btn {
   color: white;
@@ -110,7 +121,7 @@ a:visited {
 
 .functioning {
   background: white;
-  height: 440px;
+  margin: 30px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -125,29 +136,69 @@ a:visited {
   height: 300px;
 }
 .functioning__heading {
-  width: 340px;
+  width: 90%;
 }
 
+@media screen and (min-width: 1440px) {
+  .functioning {
+    width: 80%;
+  }
+  .functioning__block {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
+  }
+}
 .restaurants {
   width: 100%;
-  height: 1550px;
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .restaurants__heading {
-  width: 340px;
+  width: 90%;
 }
-
 .restaurants__block {
-  width: 340px;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
+.block__up {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.block__bottom {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurants__block {
+    width: 80%;
+  }
+  .restaurants__heading {
+    width: 80%;
+  }
+  .block__up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .block__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -179,6 +230,21 @@ a:visited {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 1440px) {
+  .footer {
+    height: 100px;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+  }
+  .footer__text {
+    padding: 5px 0;
+    margin-right: 20px;
+    flex-direction: row;
+    width: 600px;
+    align-items: end;
+  }
+}
 .header__food-picture img {
   width: 100%;
 }
@@ -357,6 +423,7 @@ a:visited {
 }
 .super-card {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .loader {
@@ -461,8 +528,6 @@ a:visited {
 }
 .content {
   width: 100%;
-  max-width: 375px;
-  min-width: 320px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -471,16 +536,20 @@ a:visited {
 
 .btn {
   background: #f6f6f6;
-  width: 90%;
+  width: 85%;
   box-shadow: 3px 3px 10px 2px #cecece;
   border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .btn:hover i {
   color: #9356dc;
 }
 .btn i {
   color: #7e7e7e;
-  transform: translateX(-34px);
+  position: absolute;
+  left: 35px;
 }
 .btn__link {
   height: 72px;
@@ -499,11 +568,13 @@ a:visited {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  transform: translateX(-65px);
+  position: absolute;
+  left: -8px;
 }
 .btn__byline {
   width: 200px;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-weight: 700;
 }
@@ -513,6 +584,11 @@ a:visited {
   padding: 15px 60px;
 }
 
+@media screen and (min-width: 1440px) {
+  .btn {
+    width: 25%;
+  }
+}
 .card {
   background: white;
   border-radius: 15px;
@@ -539,7 +615,8 @@ a:visited {
 .heart-icon {
   position: absolute;
   z-index: 100;
-  transform: translate(300px, -50px);
+  bottom: 20px;
+  right: 20px;
 }
 .heart-icon i {
   transform: scale(1.5);
