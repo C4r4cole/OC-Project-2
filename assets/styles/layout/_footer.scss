@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: space-around;
   height: 200px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
   background: $text-color_1;
   color: white;
@@ -31,10 +33,15 @@
     align-items: end;
     &__text{
       padding: 5px 0;
-      margin-right: 20px;
+      margin-right: 100px;
+      margin-bottom: 10px;
       flex-direction: row;
       width: 600px;
       align-items: end;
+    }
+    &__image{
+      margin-right: 80px;
+      margin-bottom: 10px;
     }
   }
 }

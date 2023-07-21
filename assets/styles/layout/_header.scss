@@ -2,16 +2,41 @@
   width: 100%;
   height: 113px;
   &__image {
+    position: relative;
     height: 56.5px;
     display: flex;
     justify-content: center;
     align-items: center;
     i {
-      transform: translateX(-70px);
+      position: absolute;
+      top: 28.25px;
+      left: 5%;
+      transform: translateY(-50%);
       font-size: 1.5rem;
     }
     img {
       height: 50%;
+    }
+  }
+  &__food-picture {
+    height: 300px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.header-courses{
+  width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .header{
+    &__food-picture{
+      height: 400px;
     }
   }
 }

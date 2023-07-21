@@ -1,5 +1,5 @@
 .courses {
-  width: 349px;
+  width: 90%;
   &__header{
     text-transform: uppercase;
     font-weight: 300;
@@ -9,5 +9,23 @@
       border-bottom: $color-detail_2 solid 3px;
       transform: translateY(-12px);
     }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .courses{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .courses{
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .courses{
+  width: 60%;
   }
 }

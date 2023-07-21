@@ -5,3 +5,11 @@
   background: $bg-color_2;
   margin-bottom: -60px;
 }
+
+@media screen and (min-width: 1440px){
+  .main-border-radius{
+    width: 75%;
+    transform: translateY(-30px);
+    margin-bottom: -30px;
+  }
+}
