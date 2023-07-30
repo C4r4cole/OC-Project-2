@@ -6,8 +6,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  &:hover{
-    i{
+  &:hover {
+    i {
       color: $color-detail_1;
     }
   }
@@ -51,8 +51,8 @@
   padding: 15px 60px;
 }
 
-@media screen and (min-width: 1440px){
-  .btn{
-    width: 25%;
+@media screen and (min-width: 1440px) {
+  .btn {
+    width: 30%;
   }
 }
