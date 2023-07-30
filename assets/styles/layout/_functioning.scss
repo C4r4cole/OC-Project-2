@@ -1,6 +1,6 @@
 .functioning {
   background: white;
-  margin: 0 0 30px 0;
+  padding: 0 0 30px 0;
   width: 100%;
   @include flexy;
   &__block {
@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 300px;
+    height: 250px;
   }
   &__heading {
     width: 90%;
